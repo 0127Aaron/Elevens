@@ -46,7 +46,7 @@ public class Card {
 	 */
 	public String rank() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		return this.rank();
+		return this.rank;
 	}
    /**
 	 * Accesses this <code>Card's</code> point value.
@@ -54,7 +54,7 @@ public class Card {
 	 */
 	public int pointValue() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		return this.pointValue();
+		return this.pointValue;
 	}
 	/** Compare this card with the argument.
 	 * @param otherCard the other card to compare to this
