@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * This class provides a convenient way to test shuffling methods.
  */
@@ -38,6 +40,26 @@ public class Shuffler {
 			System.out.println();
 		}
 		System.out.println();
+		System.out.println("SHUFFLING NAMES");
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("Sophia");
+		names.add("Aaron");
+		names.add("Angela");
+		names.add("Annamarie");
+		names.add("Alex");
+		names.add("Jeff");
+		names.add("Michael");
+		names.add("Tim");
+		wordShuffle(names);
+	}
+	
+	public static void wordShuffle(ArrayList<String> names) {
+		for(int r = names.size()-1; r > 0; r-- ) {
+			int x = (int)(Math.random()*(r+1));
+			String temp = names.get(x);
+			names.set(x,names.get(r));
+			names.set(r, temp);
+		}
 	}
 
 	/**
